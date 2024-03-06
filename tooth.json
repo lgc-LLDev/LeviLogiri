@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/lippkg/lip/main/schemas/tooth.v2.schema.json",
+  "format_version": 2,
+  "tooth": "github.com/lgc-LLDev/LeviLogiri",
+  "version": "0.1.0",
+  "info": {
+    "name": "LeviLogiri",
+    "description": "Print messages to console and game that LeviSatori received",
+    "author": "student_2333",
+    "tags": ["plugin", "lse", "quickjs", "levi-satori", "logiri"]
+  },
+  "dependencies": {
+    "github.com/lgc-LLDev/LeviSatori": "0.1.x"
+  },
+  "files": {
+    "place": [
+      {
+        "src": "dist/Logiri.js",
+        "dest": "plugins/LeviSatori/plugins/LeviLogiri.js"
+      }
+    ]
+  }
+}
