@@ -2,7 +2,7 @@
 
 # LeviLogiri
 
-在控制台和游戏中打印 LeviSatori 收到的消息！
+在控制台和游戏中打印 [LeviSatori](https://github.com/lgc-LLDev/LeviSatori) 收到的消息！
 
 ## 展示
 
@@ -52,6 +52,12 @@ plugins:
 QQ：3076823485  
 吹水群：[1105946125](https://jq.qq.com/?_wv=1027&k=Z3n1MpEp)  
 邮箱：<lgc2333@126.com>
+
+## 鸣谢
+
+### [ilharp/logiri](https://github.com/ilharp/logiri)
+
+实现参考
 
 ## 赞助
 
