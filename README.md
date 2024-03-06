@@ -19,10 +19,7 @@ lip i github.com/lgc-LLDev/LeviLogiri
 
 注：此插件不可重用
 
-关于 频道（Channel）与 群组（Guild）的概念：
-
-- 如果该平台有类似 Discord 的服务器概念，则频道代表的则是整个服务器，群组则代表的是服务器中的子频道
-- 如果该平台只有像 QQ 这样的群组概念，则频道和群组的 ID 一般是相同的，具体得看适配器的实现
+关于 频道（Channel）与 群组（Guild）的概念请参见 [Koishi 文档](https://koishi.chat/zh-CN/guide/adapter/#%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5)
 
 ```yml
 plugins:
