@@ -2,13 +2,11 @@
   "extends": "../../tsconfig.base.json",
   "include": ["./src/**/*"],
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "UMD",
     "moduleResolution": "Node",
     "rootDir": "./src",
-    "outDir": "./dist",
+    "outFile": "./dist/LeviLogiri.js",
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "composite": false,
-    "incremental": false
+    "emitDeclarationOnly": true
   }
 }
