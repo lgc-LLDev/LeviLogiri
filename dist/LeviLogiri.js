@@ -220,7 +220,7 @@ var ansiStyles = assembleStyles();
 var ansi_styles_default = ansiStyles;
 
 // src/logiri.ts
-var s = globalThis.LeviSatori;
+var s = LeviSatori;
 var OSC = "\x1B]";
 var BEL = "\x07";
 var SEP = ";";
@@ -375,7 +375,7 @@ async function formatMessageCreated(ss, mcFormat = false) {
 }
 
 // src/index.ts
-var s2 = globalThis.LeviSatori;
+var s2 = LeviSatori;
 function toChatInfo(str) {
   if (!str.includes(":"))
     return { platform: void 0, id: str };

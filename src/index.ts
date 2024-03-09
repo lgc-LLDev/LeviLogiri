@@ -1,8 +1,8 @@
 /// <reference types="levi-satori" />
 
-import { formatMessageCreated } from "./logiri";
+import { formatMessageCreated } from './logiri';
 
-const s = globalThis.LeviSatori;
+const s = LeviSatori;
 
 export interface ChatInfo {
   platform?: string;
@@ -17,9 +17,9 @@ export interface Config {
 }
 
 export function toChatInfo(str: string): ChatInfo {
-  if (!str.includes(":")) return { platform: undefined, id: str };
-  const [platform, ...id] = str.split(":");
-  return { platform: platform ?? undefined, id: id.join(":") };
+  if (!str.includes(':')) return { platform: undefined, id: str };
+  const [platform, ...id] = str.split(':');
+  return { platform: platform ?? undefined, id: id.join(':') };
 }
 
 export const chatInfoSchema = s.Schema.object({
@@ -42,7 +42,7 @@ export const Config: LeviSatori.Schema<Config> = s.Schema.object({
 });
 
 export function apply(ctx: LeviSatori.Context, config: Config) {
-  const logger = ctx.logger("logiri");
+  const logger = ctx.logger('logiri');
 
   const checkToGame = (ss: LeviSatori.Session) => {
     const channelList = config.gameEnabledChannels;
@@ -62,7 +62,7 @@ export function apply(ctx: LeviSatori.Context, config: Config) {
     return rightChannel && rightGuild;
   };
 
-  ctx.on("message-created", (session) => {
+  ctx.on('message-created', (session) => {
     if (config.enableInConsole) {
       formatMessageCreated(session)
         .then((arr) => arr.forEach((x) => logger.info(x)))
