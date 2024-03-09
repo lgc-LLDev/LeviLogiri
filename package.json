@@ -5,7 +5,7 @@
   "packageManager": "yarn@4.1.0",
   "author": "student_2333 <lgc2333@126.com> (https://lgc2333.top)",
   "license": "MIT",
-  "repository": "github:lgc-LLDev/LeviSatori",
+  "repository": "github:lgc-LLDev/LeviLogiri",
   "funding": "https://afdian.net/a/lgc2333",
   "scripts": {
     "build": "esbuild src/index.ts --bundle --outfile=dist/LeviLogiri.js --target=es2020 --format=cjs",
